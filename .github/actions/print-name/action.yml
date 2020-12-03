@@ -10,3 +10,4 @@ runs:
   steps:
     - name: Run a one-line script
       run: echo Hello from the meta action ${{ inputs.your-name }}!
+      shell: bash
