@@ -17,11 +17,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - uses: ./.github/actions/template
+      - uses: ./.github/actions/print-name
         with:
-          your-name: 'Weed'
+          your-name: 'Brian'
 
       - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run: echo Megacool
