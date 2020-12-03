@@ -6,5 +6,7 @@ inputs:
     required: true
 
 runs:
-  - name: Run a one-line script
-    run: echo Hello from the meta action ${{ inputs.your-name }}!
+  using: composite
+  steps:
+    - name: Run a one-line script
+      run: echo Hello from the meta action ${{ inputs.your-name }}!
