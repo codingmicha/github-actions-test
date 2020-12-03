@@ -1,0 +1,10 @@
+name: 'Master Action'
+description: 'The master for all actions'
+inputs:
+  your-name:
+    description: 'Your name'
+    required: true
+
+runs:
+  - name: Run a one-line script
+    run: echo Hello from the meta action ${{ inputs.your-name }}!
